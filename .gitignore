@@ -1,0 +1,10 @@
+.git
+._*
+.vscode
+RudraPatel.png
+
+.svn
+.hg
+CVS
+.DS_Store
+Thumbs.db

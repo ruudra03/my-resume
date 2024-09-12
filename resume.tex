@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author: Rudra Patel
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on September 12, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Rudra Patel} \\ \vspace{1pt}
+    \small 
+    \faIcon{phone}
+    +44 7824048693 $ $ 
+    \faIcon{envelope}
+    \href{mailto:work.rudra@aol.com}{\underline{work.rudra@aol.com}} $ $ 
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/ruudra03}{\underline{linkedin.com/in/ruudra03}} $ $
+    \faIcon{github}
+    \href{https://github.com/ruudra03}{\underline{github.com/ruudra03}}
+\end{center}
+
+% -------------------- WORK EXPERIENCE --------------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Build Macro} $|$ \footnotesize\emph{Software Engineer Intern}}{Sept 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{{\textit{Technologies:} \textbf{Angular, TypeScript, NodeJS, ExpressJS, SQL, BigQuery, Firebase, HTML, CSS, Git}}}
+            \resumeItem{Building new project report pages for users, several already pushed into production.}
+            \resumeItem{Creating and optimizing server endpoints in development for displaying dynamic data on the report pages.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Silverwing Technologies Pvt. Ltd.} $|$ \footnotesize\emph{Intern}}{Aug 2024}
+        \resumeItemListStart
+            \resumeItem{Completed several \textbf{NodeJS} challenges while being trained by senior team members.}
+            \resumeItem{Interacted with backend developers while constantly learning and holding discussions with the team.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Tumlare Software Services} $|$ \footnotesize\emph{Software Engineer Intern}}{July 2024 -- Aug 2024}
+        \resumeItemListStart
+            \resumeItem{{\textit{Technologies:} \textbf{Vite, VueJS, JavaScript, NodeJS, Vuex, Axios, HTML, CSS, Sass, ChartJS, Git}}}
+            \resumeItem{Created a frontend application with role-based user access and implemented state persistence.}
+            \resumeItem{Built an interactive dashboard showing data insights using charts, tables, and tooltips for the app.}
+            \resumeItem{Implemented RESTful API using \textbf{JSON-server} to mock endpoint requests, and used \textbf{Mockaroo} to generate placeholder data during development.}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{H.V. Sales} $|$ \footnotesize\emph{Associate Product Manager -- Part-time}}{Sept 2022 -- June 2024}
+        \resumeItemListStart
+            \resumeItem{Optimized product listings on several different marketplaces and the company's personal website, and also added more than 200 new seasonal products to the company's portfolio.}
+            \resumeItem{Streamlined order fulfillment by introducing better inventory management solutions, reducing dispatch time.}
+            \resumeItem{Assisted in implementing marketplace promotions for bestselling products, and analyzed customer trends and feedback to deliver better results.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{University of Westminster} $|$ \footnotesize\emph{Student Helper}}{Mar 2024 -- Apr 2024}
+        \resumeItemListStart
+            \resumeItem{Worked on the development of an ontology-based framework for Scalable Evaluation of Text Summarisation (SETS Project funded by The Alan Turing Institute).}
+            \resumeItem{Conducted literature review and data analysis, working alongside university professors and PhD students.}
+            \resumeItem{Collaborated throughout the research, gaining experience in academic research.}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- TECHNICAL SKILLS --------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small
+    {\item{
+     \textit{Languages: }{\textbf{Python}, \textbf{Java}, \textbf{JavaScript}, \textbf{TypeScript}, SQL, XML, R, \textbf{PHP}, Swift, Kotlin, \textbf{HTML}, \textbf{CSS}, Sass} \\
+
+     \textit{Frameworks: }{\textbf{React}, \textbf{Vue.js}, \textbf{Angular}, \textbf{ExpressJS}, \textbf{Node.js}} \\
+     
+     \textit{Developer Tools: }{\textbf{Git}, \textbf{GitHub}, VS Code, Vite, \textbf{Firebase}, Xcode, Atelier B, ProB, Android Studio, RStudio, SQLite Studio, phpMyAdmin, Mockaroo, \textbf{Postman}, LTSA, JDK, NetBeans IDE, Visual Studio, Kali Linux, Draw.io, CyberDuck, Trello, Notion, \textbf{JSON-server}} \\
+     
+     \textit{Libraries: }{Axios, \textbf{JWT}, \textbf{Redux}, \textbf{Vuex}, Mongoose, Latex, SQLite, Chart.js} \\
+
+     \textit{Database Management Systems: }{\textbf{MongoDB}, MySQL, PostgreSQL, \textbf{BigQuery}}
+    }}
+ \end{itemize}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Westminster, London}{Sept 2021 -- July 2024}
+      {Bachelor of Engineering in Software Engineering}{Awarded: \textbf{First Class Honours}}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- Extra Curricular --------------------
+\section{Extra Curricular \& Hobbies}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+            {\textbf{Westminster Working Cultures (WWC) UK @ University of Westminster}}{Sept 2024}
+            
+            With the goal of improving employability, enthusiastically connected and networked with students and professionals from different fields, and visited several workplaces in London and Bristol.
+            
+        \resumeProjectHeading
+            {\textbf{EDI\&AI, AI UK Turing Fringe @ Westminster Research Communities}}{Mar 2024}
+            
+            Connected and networked with researchers working on innovative projects involving Data Science and Artificial Intelligence, and also got an opportunity to present the TuringWise Project (Final Year Project).
+
+        \resumeProjectHeading
+            {\textbf{Varsity Code @ University of Westminster}}{2022}
+
+        \resumeProjectHeading
+            {\textbf{\textit{Hobbies: }}Chess, Football, Reading online articles}
+          
+    \resumeSubHeadingListEnd
+
+\end{document}
